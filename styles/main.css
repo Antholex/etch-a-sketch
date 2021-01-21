@@ -12,3 +12,7 @@
   margin-left: -1px;
   box-sizing: border-box;
 }
+
+.black {
+  background-color: #000;
+}
