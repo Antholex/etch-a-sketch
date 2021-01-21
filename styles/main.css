@@ -1,16 +1,17 @@
 .canvas {
   width: 640px;
+  height: 640px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .square {
-  height: 40px;
-  width: 40px;
+  height: 39px;
+  width: 39px;
   border: 1px solid #000;
-  margin-top: -1px;
-  margin-left: -1px;
   box-sizing: border-box;
+  margin-top: 1px;
+  margin-right: 1px;
 }
 
 .black {
