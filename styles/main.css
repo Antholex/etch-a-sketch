@@ -27,4 +27,5 @@ h1 {
 .controls {
   width: 220px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
