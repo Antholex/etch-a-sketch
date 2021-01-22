@@ -49,7 +49,7 @@ function sketchPad() {
 
   function setBoardSize() {
     let size = prompt("Enter value");
-    if (size >= 1) {
+    if (size >= 1 && size <= 50) {
       clearBoard();
       numberOfSquares = size * size;
       drawBoard();
@@ -60,7 +60,7 @@ function sketchPad() {
       return;
     }
     else {
-      alert("Please enter a value between 1 & 40");
+      alert("Please enter a value between 1 & 50");
       return setBoardSize();
     }
   }
