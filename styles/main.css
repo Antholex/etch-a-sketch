@@ -23,3 +23,8 @@ h1 {
 .black {
   background-color: #000;
 }
+
+.controls {
+  width: 220px;
+  margin: 0 auto;
+}
