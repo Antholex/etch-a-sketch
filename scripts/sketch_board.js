@@ -56,6 +56,9 @@ function sketchPad() {
       resizeBoard(size);
       colourBoard();
     }
+    else if (size === null) {
+      return;
+    }
     else {
       alert("Please enter a value between 1 & 40");
       return setBoardSize();
