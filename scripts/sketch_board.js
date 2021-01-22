@@ -40,8 +40,8 @@ function sketchPad() {
       }
     }
 
-    let height = (Math.floor(640 / size) - 1) + "px";
-    let width = (Math.floor(640 / size) - 1) + "px";
+    let height = ((640 / size) - 1) + "px";
+    let width = ((640 / size) - 1) + "px";
 
     square.style.setProperty("height", height);
     square.style.setProperty("width", width);
@@ -49,7 +49,7 @@ function sketchPad() {
 
   function setBoardSize() {
     let size = prompt("Enter value");
-    if (size <= 40 && size >= 1) {
+    if (size >= 1) {
       clearBoard();
       numberOfSquares = size * size;
       drawBoard();
