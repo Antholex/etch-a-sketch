@@ -1,8 +1,14 @@
+h1 {
+  text-align: center;
+}
+
+
 .canvas {
   width: 640px;
   height: 640px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .square {
