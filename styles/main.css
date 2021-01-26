@@ -9,23 +9,55 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding-bottom: 20px
 }
 
 .square {
-  height: 39px;
-  width: 39px;
   border: 1px solid #000;
   box-sizing: border-box;
   margin-top: 1px;
   margin-right: 1px;
+  transition: 200ms background-color;
 }
 
-.black {
+.square.black {
   background-color: #000;
 }
 
-.controls {
-  width: 220px;
+.intro {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.resize-board-form-wrapper {
+  width: 250px;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+
+.resize-board-form {
+  display: flex;
+}
+
+.form-field-label {
+  font-size: 14px;
+}
+
+.submit {
+  position: relative;
+  top: 20px;
+}
+
+.error-message {
+  font-size: 14px;
+  color: #FF2632;
+}
+
+.error-field {
+  border: 1px solid #FF2632;
+}
+
+.error-field:focus-within {
+  outline: none;
 }

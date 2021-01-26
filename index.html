@@ -10,13 +10,27 @@
 </head>
 <body>
   <h1>Etch-a-Sketch</h1>
-  <div class="controls">
-    <input type="text" class="size-input">
-    <input type="submit" value="Submit" class="submit-button">
+  <div class="intro">
+    <p>
+      Hover over the squares on the board to paint them!
+    </p>
+    <p>
+      To create a new board enter the number of squares (between 1 and 50) you'd like to display on each side and click Redraw.
+    </p>
+  </div>
+  <div class="resize-board-form-wrapper">
+    <form class="resize-board-form">
+      <div class="form-field">
+        <label for="new-board-size" class="form-field-label">Number of squares per side:</label>
+        <input id="new-board-size" type="text" class="input-field">
+      </div>
+      <div class="submit">
+        <button type="button" value="Submit" class="submit-button">Redraw</button>
+      </div>
+    </form>
   </div>
   <div class="canvas">
   </div>
-  <!-- <button type="button" value="change-size" class="redraw">Change size</button> -->
   <script>
     sketchPad();
   </script>
